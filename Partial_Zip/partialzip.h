@@ -1,3 +1,7 @@
+// Originally named partialzip.c but for xcode to properly accept it i had changed to patialzip.h
+// Gotta love Xcode . . .
+
+
 #include "common.h"
 #include "partial_2.h"
 
@@ -7,17 +11,11 @@ void callback(ZipInfo* info, CDFile* file, size_t progress) {
 	printf("\rDownloading: %d%%", percentDone);
 }
 
-int fetch(int argc, char* argh, char* argg, char* argf) {
+int fetch(char* url, char* remotefile, char* localpath) {
 
-    printf("\n\n %s, %s, %s \n\n\n", argh, argg, argf);
+    printf("\n\nAfter Passing to fetch()\n\n%s, %s, %s\n\n", url, remotefile, localpath);
 
-	char* url = argh;
-	char* remotefile = argg;
-	char* localpath = argf;
-	
-    printf("\n %s, %s, %s\n\n", url, remotefile, localpath);
-
-	printf("Initializing download for %s...\n", remotefile);
+	printf("Initializing download for %s\n", remotefile);
 
 	ZipInfo* info = PartialZipInit(url);
 	if(!info)

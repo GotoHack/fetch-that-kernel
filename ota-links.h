@@ -3,16 +3,24 @@
 
 #include <string.h>
 
+int choice;
+char d1[37] = "AssetData/boot/kernelcache.release.\0"; // Directory that contains the kernelcache
+char d2[45]; 
+
+char destination[34] = "~/Downloads/kernelcache.release.\0"; 
+char d3[39]; // after user selction and the addition of device info
+
 struct ota_link {
 	char kernelCache[8];
-    char otaURL[200];
+    char URL[200];
+    
 };
 
 static struct ota_link DP1[] = {
 
-    {"n102", "appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62891-20160613-30D6553E-2D91-11E6-B903-AF9EB96A614B/com_apple_MobileAsset_SoftwareUpdate/b7e9541c27b102a096de842ff6b67b13a460175b.zip"},
+    {"n102", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62891-20160613-30D6553E-2D91-11E6-B903-AF9EB96A614B/com_apple_MobileAsset_SoftwareUpdate/b7e9541c27b102a096de842ff6b67b13a460175b.zip"},
 
-	{"j71", "appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62901-20160613-D33D63EE-2D91-11E6-8884-DBA1B96A614B/com_apple_MobileAsset_SoftwareUpdate/0e3ec757b94a9c87b2fd1fa7dce2863111302d41.zip"},
+	{"j71", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62901-20160613-D33D63EE-2D91-11E6-8884-DBA1B96A614B/com_apple_MobileAsset_SoftwareUpdate/0e3ec757b94a9c87b2fd1fa7dce2863111302d41.zip"},
     
 	{"j72", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62909-20160613-D49DC47C-2D91-11E6-A29C-47A2B96A614B/com_apple_MobileAsset_SoftwareUpdate/780f7572f050bdf4ce2dc5d97d90bf18035c22e9.zip"},
     

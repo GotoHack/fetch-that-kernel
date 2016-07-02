@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD4181AD1D242A1E00E0C96A /* libcurl.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181A61D242A1E00E0C96A /* libcurl.4.dylib */; };
-		BD4181AE1D242A1E00E0C96A /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */; };
 		BD4181AF1D242A1E00E0C96A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4181A81D242A1E00E0C96A /* main.c */; };
-		BD4181B01D242A1E00E0C96A /* partial_2.h in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AA1D242A1E00E0C96A /* partial_2.h */; };
-		BD4181B11D242A1E00E0C96A /* partialzip.h in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AC1D242A1E00E0C96A /* partialzip.h */; };
+		BD4181BD1D285D6000E0C96A /* libcurl.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181BB1D285D6000E0C96A /* libcurl.4.dylib */; };
+		BD4181BE1D285D6000E0C96A /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181BC1D285D6000E0C96A /* libz.1.2.8.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,16 +26,12 @@
 
 /* Begin PBXFileReference section */
 		BD41819A1D2429F800E0C96A /* fetch-that-kernel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fetch-that-kernel"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD4181A41D242A1E00E0C96A /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		BD4181A51D242A1E00E0C96A /* device_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_info.h; sourceTree = "<group>"; };
-		BD4181A61D242A1E00E0C96A /* libcurl.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.4.dylib; sourceTree = "<group>"; };
-		BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
 		BD4181A81D242A1E00E0C96A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BD4181A91D242A1E00E0C96A /* ota-links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ota-links.h"; sourceTree = "<group>"; };
-		BD4181AA1D242A1E00E0C96A /* partial_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial_2.h; sourceTree = "<group>"; };
-		BD4181AC1D242A1E00E0C96A /* partialzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partialzip.h; sourceTree = "<group>"; };
-		BD4181B41D24D85300E0C96A /* partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
-		BD4181B51D277D3200E0C96A /* partialzip */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = partialzip; sourceTree = "<group>"; };
+		BD4181B61D285C6600E0C96A /* Partial_Zip */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Partial_Zip; sourceTree = "<group>"; };
+		BD4181BB1D285D6000E0C96A /* libcurl.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.4.dylib; sourceTree = "<group>"; };
+		BD4181BC1D285D6000E0C96A /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD4181AE1D242A1E00E0C96A /* libz.1.2.8.dylib in Frameworks */,
-				BD4181AD1D242A1E00E0C96A /* libcurl.4.dylib in Frameworks */,
+				BD4181BE1D285D6000E0C96A /* libz.1.2.8.dylib in Frameworks */,
+				BD4181BD1D285D6000E0C96A /* libcurl.4.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,17 +50,12 @@
 		BD4181911D2429F800E0C96A = {
 			isa = PBXGroup;
 			children = (
-				BD4181A41D242A1E00E0C96A /* common.h */,
+				BD4181B61D285C6600E0C96A /* Partial_Zip */,
 				BD4181A51D242A1E00E0C96A /* device_info.h */,
-				BD4181A61D242A1E00E0C96A /* libcurl.4.dylib */,
-				BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */,
 				BD4181A81D242A1E00E0C96A /* main.c */,
-				BD4181B51D277D3200E0C96A /* partialzip */,
+				BD4181BB1D285D6000E0C96A /* libcurl.4.dylib */,
+				BD4181BC1D285D6000E0C96A /* libz.1.2.8.dylib */,
 				BD4181A91D242A1E00E0C96A /* ota-links.h */,
-				BD4181AA1D242A1E00E0C96A /* partial_2.h */,
-				BD4181B41D24D85300E0C96A /* partial.h */,
-				BD4181AC1D242A1E00E0C96A /* partialzip.h */,
-				BD41819C1D2429F800E0C96A /* fetch-that-kernel */,
 				BD41819B1D2429F800E0C96A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,13 +66,6 @@
 				BD41819A1D2429F800E0C96A /* fetch-that-kernel */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BD41819C1D2429F800E0C96A /* fetch-that-kernel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "fetch-that-kernel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4181AF1D242A1E00E0C96A /* main.c in Sources */,
-				BD4181B11D242A1E00E0C96A /* partialzip.h in Sources */,
-				BD4181B01D242A1E00E0C96A /* partial_2.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +218,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Partial_Zip",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -249,6 +230,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Partial_Zip",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

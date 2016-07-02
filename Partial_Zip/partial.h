@@ -1,3 +1,7 @@
+// Originally named partial.h
+
+
+
 #include <inttypes.h>
 #include <curl/curl.h>
 

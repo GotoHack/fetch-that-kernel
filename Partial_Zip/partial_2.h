@@ -1,3 +1,7 @@
+// Originally named partial.c but for xcode to properly accept it i had changed to patial_2.h
+// Gotta love Xcode . . .
+
+
 #include <curl/curl.h>
 #include <stdlib.h>
 #include <stdio.h>
