@@ -1,13 +1,14 @@
 #include <curl/curl.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 #include <inttypes.h>
 #include <zlib.h>
 #include <libgen.h>
 
 #include "common.h"
 #include "partial.h"
+
+
 
 static size_t dummyReceive(void* data, size_t size, size_t nmemb, void* info) {
 	return size * nmemb;
@@ -230,7 +231,7 @@ CDFile* PartialZipListFiles(ZipInfo* info)
 	return NULL;
 }
 
-unsigned char* PartialZipGetFile(ZipInfo* info, CDFile* file, char* sizeToDownload)
+unsigned char* PartialZipGetFile(ZipInfo* info, CDFile* file)
 {
 	LocalFile localHeader;
 	LocalFile* pLocalHeader = &localHeader;
@@ -262,10 +263,6 @@ unsigned char* PartialZipGetFile(ZipInfo* info, CDFile* file, char* sizeToDownlo
 	FLIPENDIANLE(localHeader.lenFileName);
 	FLIPENDIANLE(localHeader.lenExtra);
 
-	if(sizeToDownload != NULL) {
-		file->compressedSize = atoi(sizeToDownload);
-		file->size = atoi(sizeToDownload);
-	}
 
 	unsigned char* fileData = (unsigned char*) malloc(file->compressedSize);
 	size_t progress = 0;

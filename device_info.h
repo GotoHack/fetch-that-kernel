@@ -1,6 +1,8 @@
 #ifndef __DEVICE_INFO_H
 #define __DEVICE_INFO_H
 
+#include <string.h>
+
 struct device_info {
 	const char* productType;
 	const char* displayName;
@@ -8,8 +10,6 @@ struct device_info {
 };
 
 static struct device_info device_list[] = {
-    
-	{"j42d", "AppleTV 4"},
 
     {"n102", "iPod touch 6"},
 

@@ -1,6 +1,10 @@
 #include <inttypes.h>
 #include <curl/curl.h>
 
+#include "ota-links.h"
+#include "device_info.h"
+
+
 typedef struct EndOfCD {
 	uint32_t signature;
 	uint16_t diskNo;
@@ -72,7 +76,7 @@ extern "C" {
 
 	CDFile* PartialZipListFiles(ZipInfo* info);
 
-	unsigned char* PartialZipGetFile(ZipInfo* info, CDFile* file, char* sizeToDownload);
+	unsigned char* PartialZipGetFile(ZipInfo* info, CDFile* file);
 
 	void PartialZipRelease(ZipInfo* info);
 

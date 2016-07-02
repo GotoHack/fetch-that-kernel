@@ -10,8 +10,8 @@
 		BD4181AD1D242A1E00E0C96A /* libcurl.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181A61D242A1E00E0C96A /* libcurl.4.dylib */; };
 		BD4181AE1D242A1E00E0C96A /* libz.1.2.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */; };
 		BD4181AF1D242A1E00E0C96A /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4181A81D242A1E00E0C96A /* main.c */; };
-		BD4181B01D242A1E00E0C96A /* partial.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AA1D242A1E00E0C96A /* partial.c */; };
-		BD4181B11D242A1E00E0C96A /* partialzip.c in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AC1D242A1E00E0C96A /* partialzip.c */; };
+		BD4181B01D242A1E00E0C96A /* partial_2.h in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AA1D242A1E00E0C96A /* partial_2.h */; };
+		BD4181B11D242A1E00E0C96A /* partialzip.h in Sources */ = {isa = PBXBuildFile; fileRef = BD4181AC1D242A1E00E0C96A /* partialzip.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,9 +34,10 @@
 		BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
 		BD4181A81D242A1E00E0C96A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		BD4181A91D242A1E00E0C96A /* ota-links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ota-links.h"; sourceTree = "<group>"; };
-		BD4181AA1D242A1E00E0C96A /* partial.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partial.c; sourceTree = "<group>"; };
-		BD4181AB1D242A1E00E0C96A /* partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
-		BD4181AC1D242A1E00E0C96A /* partialzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = partialzip.c; sourceTree = "<group>"; };
+		BD4181AA1D242A1E00E0C96A /* partial_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial_2.h; sourceTree = "<group>"; };
+		BD4181AC1D242A1E00E0C96A /* partialzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partialzip.h; sourceTree = "<group>"; };
+		BD4181B41D24D85300E0C96A /* partial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = partial.h; sourceTree = "<group>"; };
+		BD4181B51D277D3200E0C96A /* partialzip */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = partialzip; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +61,11 @@
 				BD4181A61D242A1E00E0C96A /* libcurl.4.dylib */,
 				BD4181A71D242A1E00E0C96A /* libz.1.2.8.dylib */,
 				BD4181A81D242A1E00E0C96A /* main.c */,
+				BD4181B51D277D3200E0C96A /* partialzip */,
 				BD4181A91D242A1E00E0C96A /* ota-links.h */,
-				BD4181AA1D242A1E00E0C96A /* partial.c */,
-				BD4181AB1D242A1E00E0C96A /* partial.h */,
-				BD4181AC1D242A1E00E0C96A /* partialzip.c */,
+				BD4181AA1D242A1E00E0C96A /* partial_2.h */,
+				BD4181B41D24D85300E0C96A /* partial.h */,
+				BD4181AC1D242A1E00E0C96A /* partialzip.h */,
 				BD41819C1D2429F800E0C96A /* fetch-that-kernel */,
 				BD41819B1D2429F800E0C96A /* Products */,
 			);
@@ -141,8 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD4181AF1D242A1E00E0C96A /* main.c in Sources */,
-				BD4181B11D242A1E00E0C96A /* partialzip.c in Sources */,
-				BD4181B01D242A1E00E0C96A /* partial.c in Sources */,
+				BD4181B11D242A1E00E0C96A /* partialzip.h in Sources */,
+				BD4181B01D242A1E00E0C96A /* partial_2.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +273,7 @@
 				BD4181A31D2429F800E0C96A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

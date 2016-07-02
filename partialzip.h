@@ -1,24 +1,21 @@
-#include <stdio.h>
 #include "common.h"
-#include "partial.h"
+#include "partial_2.h"
+
 
 void callback(ZipInfo* info, CDFile* file, size_t progress) {
 	int percentDone = progress * 100/file->compressedSize;
 	printf("\rDownloading: %d%%", percentDone);
 }
 
-int fetch(int argc, char* argv[]) {
+int fetch(int argc, char* argh, char* argg, char* argf) {
 
-	if (argc < 4 || argc > 5)
-	{
-		printf("usage: %s <ZipURL> <RemotePath> <LocalPath> [numBytes]\n", argv[0]);
-		return 1;
-	}
+    printf("\n\n %s, %s, %s \n\n\n", argh, argg, argf);
 
-	char* url = argv[1];
-	char* remotefile = argv[2];
-	char* localpath = argv[3];
-	char* sizeToDownload = argv[4];
+	char* url = argh;
+	char* remotefile = argg;
+	char* localpath = argf;
+	
+    printf("\n %s, %s, %s\n\n", url, remotefile, localpath);
 
 	printf("Initializing download for %s...\n", remotefile);
 
@@ -38,7 +35,7 @@ int fetch(int argc, char* argv[]) {
 		return 0;
 	}
 
-	unsigned char* data = PartialZipGetFile(info, file, sizeToDownload);
+	unsigned char* data = PartialZipGetFile(info, file);
 	int dataLen = file->size;
 
 	PartialZipRelease(info);
@@ -48,10 +45,12 @@ int fetch(int argc, char* argv[]) {
 	data = realloc(data, dataLen + 1);
 	data[dataLen] = '\0';
 
+    printf("\n\n %s \n\n ", localpath);
+    
 	FILE* out = fopen(localpath, "wb");
 	if (out == NULL)
 	{
-		printf("Failed to open %s", localpath);
+		printf("Failed to open %s\n\n\n", localpath);
 		return 1;
 	}
 
