@@ -11,8 +11,11 @@ struct device_info {
 
 static struct device_info device_list[] = {
 
+    // iPod Touch
     {"n102", "iPod touch 6"},
-
+    
+    
+    // iPad
 	{"j71", "iPad Air (WiFi)"},
     
 	{"j72", "iPad Air (Cellular)"},
@@ -30,7 +33,9 @@ static struct device_info device_list[] = {
     {"j98a", "iPad Pro 12.9-inch (WiFi)"},
     
     {"j99a", "iPad Pro 12.9-inch (Cellular)"},
+    
 
+    // iPad Mini
 	{"j85", "iPad Mini 2 (WiFi)"},
     
     {"j86", "iPad Mini 2 (Cellualr)"},
@@ -46,7 +51,9 @@ static struct device_info device_list[] = {
     {"j96", "iPad Mini 4 (WiFi)"},
     
     {"j97", "iPad Mini 4 (Cellular)"},
-
+    
+    
+    // iPhone
     {"n51", "iPhone 5s (GSM)"},
     
     {"n53", "iPhone 5s (Global)"},

@@ -17,9 +17,13 @@ struct ota_link {
 };
 
 static struct ota_link DP1[] = {
-
+    
+    
+    // iPod Touch
     {"n102", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62891-20160613-30D6553E-2D91-11E6-B903-AF9EB96A614B/com_apple_MobileAsset_SoftwareUpdate/b7e9541c27b102a096de842ff6b67b13a460175b.zip"},
-
+    
+    
+    // iPad
 	{"j71", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62901-20160613-D33D63EE-2D91-11E6-8884-DBA1B96A614B/com_apple_MobileAsset_SoftwareUpdate/0e3ec757b94a9c87b2fd1fa7dce2863111302d41.zip"},
     
 	{"j72", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62909-20160613-D49DC47C-2D91-11E6-A29C-47A2B96A614B/com_apple_MobileAsset_SoftwareUpdate/780f7572f050bdf4ce2dc5d97d90bf18035c22e9.zip"},
@@ -38,6 +42,8 @@ static struct ota_link DP1[] = {
     
     {"j99a", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62927-20160613-DE4B8F18-2D91-11E6-B7F0-E2A2B96A614B/com_apple_MobileAsset_SoftwareUpdate/bb7e3995fe9da05c5f655123fa3b878a36e6d251.zip"},
     
+    
+    // iPad Mini
 	{"j85", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62880-20160613-30CF45B4-2D91-11E6-8E27-A79EB96A614B/com_apple_MobileAsset_SoftwareUpdate/dc4348ee70495811f2ccb79a6b19032b957b3ea0.zip"},
     
     {"j86", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62864-20160613-30CBAFEE-2D91-11E6-8AA2-959EB96A614B/com_apple_MobileAsset_SoftwareUpdate/7485af5c146b0011daf95ae90e5339ac5d939193.zip"},
@@ -54,6 +60,8 @@ static struct ota_link DP1[] = {
     
     {"j97", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62928-20160613-E584D050-2D91-11E6-9721-02A3B96A614B/com_apple_MobileAsset_SoftwareUpdate/22f9963b4fdf668a1898003a10cbcdcf68c3d08d.zip"},
 
+    
+    // iPhone
     {"n51", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62882-20160613-30D07B8C-2D91-11E6-A4A4-A99EB96A614B/com_apple_MobileAsset_SoftwareUpdate/9caebbbf1de28005d385b7a4721fa3ae4b2dcaee.zip"},
     
     {"n53", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62920-20160613-DB23BEC8-2D91-11E6-8FC3-BEA2B96A614B/com_apple_MobileAsset_SoftwareUpdate/7200ba087b9f82133751a03c0e5f7efb3f3607fa.zip"},

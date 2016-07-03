@@ -6,7 +6,7 @@
 //  Copyright © 2016 Michael Woolweaver. All rights reserved.
 //
 
-#include "Partial_Zip/partialzip.h"
+#include "partial_zip/partialzip.h"
 
 
 int main(int argc, char* argv[]) {
@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
     
     
     
-    fetch(DP1[choice].URL, d2, d3);
+    fetch(DP1[choice].URL, d2, d3); // This function is declared in partialzip.h
     
     
     return 0;

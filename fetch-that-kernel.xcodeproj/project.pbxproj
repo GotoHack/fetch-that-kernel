@@ -28,8 +28,8 @@
 		BD41819A1D2429F800E0C96A /* fetch-that-kernel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "fetch-that-kernel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4181A51D242A1E00E0C96A /* device_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = device_info.h; sourceTree = "<group>"; };
 		BD4181A81D242A1E00E0C96A /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		BD4181A91D242A1E00E0C96A /* ota-links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ota-links.h"; sourceTree = "<group>"; };
-		BD4181B61D285C6600E0C96A /* Partial_Zip */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Partial_Zip; sourceTree = "<group>"; };
+		BD4181A91D242A1E00E0C96A /* ota_links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ota_links.h; sourceTree = "<group>"; };
+		BD4181B61D285C6600E0C96A /* partial_zip */ = {isa = PBXFileReference; lastKnownFileType = folder; path = partial_zip; sourceTree = "<group>"; };
 		BD4181BB1D285D6000E0C96A /* libcurl.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.4.dylib; sourceTree = "<group>"; };
 		BD4181BC1D285D6000E0C96A /* libz.1.2.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.8.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,12 +50,12 @@
 		BD4181911D2429F800E0C96A = {
 			isa = PBXGroup;
 			children = (
-				BD4181B61D285C6600E0C96A /* Partial_Zip */,
+				BD4181B61D285C6600E0C96A /* partial_zip */,
 				BD4181A51D242A1E00E0C96A /* device_info.h */,
+				BD4181A91D242A1E00E0C96A /* ota_links.h */,
 				BD4181A81D242A1E00E0C96A /* main.c */,
 				BD4181BB1D285D6000E0C96A /* libcurl.4.dylib */,
 				BD4181BC1D285D6000E0C96A /* libz.1.2.8.dylib */,
-				BD4181A91D242A1E00E0C96A /* ota-links.h */,
 				BD41819B1D2429F800E0C96A /* Products */,
 			);
 			sourceTree = "<group>";

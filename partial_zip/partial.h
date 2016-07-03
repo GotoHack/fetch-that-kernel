@@ -5,7 +5,9 @@
 #include <inttypes.h>
 #include <curl/curl.h>
 
-#include "ota-links.h"
+#include "common.h"
+
+#include "ota_links.h"
 #include "device_info.h"
 
 

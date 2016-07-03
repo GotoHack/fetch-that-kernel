@@ -1,8 +1,6 @@
 // Originally named partialzip.c but for xcode to properly accept it i had changed to patialzip.h
 // Gotta love Xcode . . .
 
-
-#include "common.h"
 #include "partial_2.h"
 
 
