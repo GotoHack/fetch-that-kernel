@@ -11,7 +11,7 @@ char destination[34] = "~/Downloads/kernelcache.release.\0";
 char d3[39]; // after user selction and the addition of device info
 
 struct ota_link {
-	char kernelCache[8];
+    char kernelCache[8];
     char URL[200];
     
 };

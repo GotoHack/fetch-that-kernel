@@ -10,8 +10,23 @@ void callback(ZipInfo* info, CDFile* file, size_t progress) {
 }
 
 int fetch(char* url, char* remotefile, char* localpath) {
+    
+    /*
+    // not used any more since we are controlling the values being used
+     
+    if (argc < 4 || argc > 5)
+    {
+        printf("usage: %s <ZipURL> <RemotePath> <LocalPath> [numBytes]\n", argv[0]);
+        return 1;
+    }
+    
+    char* url = argv[1];
+    char* remotefile = argv[2];
+    char* localpath = argv[3];
+    char* sizeToDownload = argv[4];
+    */
 
-    printf("\n\nAfter Passing to fetch()\n\n%s, %s, %s\n\n", url, remotefile, localpath);
+    printf("\n\nAfter Passing to fetch()\n\n%s, %s, %s\n\n", url, remotefile, localpath); // just used for debuging to make sure proper values are used after passing
 
 	printf("Initializing download for %s\n", remotefile);
 
