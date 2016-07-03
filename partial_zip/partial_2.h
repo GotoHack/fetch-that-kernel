@@ -75,7 +75,7 @@ static CDFile* flipFiles(ZipInfo* info)
 
 		cur += sizeof(CDFile) + candidate->lenFileName + candidate->lenExtra + candidate->lenComment;
 	}
-    return 0; // i added this to avoid errors not sure how it's gonna work out though
+    
 }
 
 ZipInfo* PartialZipInit(const char* url)
