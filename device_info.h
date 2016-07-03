@@ -8,7 +8,6 @@ struct device_info {
 	const char* displayName;
     
 };
-
 static struct device_info device_list[] = {
 
     // iPod Touch

@@ -5,17 +5,14 @@
 
 int choice;
 char d1[37] = "AssetData/boot/kernelcache.release.\0"; // Directory that contains the kernelcache
-char d2[45]; 
-
+char d2[45];
 char destination[34] = "~/Downloads/kernelcache.release.\0"; 
 char d3[39]; // after user selction and the addition of device info
 
 struct ota_link {
     char kernelCache[8];
     char URL[200];
-    
 };
-
 static struct ota_link DP1[] = {
     
     
@@ -81,7 +78,5 @@ static struct ota_link DP1[] = {
     {"n69", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62919-20160613-D924F01A-2D91-11E6-B1E8-9AA2B96A614B/com_apple_MobileAsset_SoftwareUpdate/e115c891db645b507e5b8894257b98ca16f3472a.zip"},
     
     {"n69u", "http://appldnld.apple.com/WWDC_2016/iOS10Seed1/031-62879-20160613-30CF435C-2D91-11E6-8FCE-A59EB96A614B/com_apple_MobileAsset_SoftwareUpdate/f05a449f8f58b3f4c218d9e8894804e787162633.zip"},
-    
 };
-
 #endif
